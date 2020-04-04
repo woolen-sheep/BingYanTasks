@@ -4,6 +4,6 @@ then
 	exit
 fi
 str=$1
-str=`echo $str | sed "s/[A-Za-z]\{6,\}//g"`
-str=`echo $str | sed "s/[^A-Za-z_]\{1,\}/ /g"`
+str=`echo $str | sed "s/[A-Za-z\-]\{6,\}//g"`
+str=`echo $str | sed "s/[^A-Za-z\-]\{1,\}/ /g"`
 echo $str
